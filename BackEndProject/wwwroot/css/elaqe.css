@@ -1,0 +1,69 @@
+﻿nav {
+    background: linear-gradient(150deg,rgb(138, 43, 240),rgb(0, 21, 139));
+}
+
+.elaqe {
+    padding: 130px 0 80px 0;
+    min-height: 100vh;
+}
+
+.elaqe1 {
+    width: 70%;
+    margin: 0 auto 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+    .elaqe1 iframe {
+        width: 50%;
+        box-shadow: 0 0 10px gray;
+    }
+
+.elaqe1txt {
+    width: 43%;
+    font-size: 20px;
+    padding: 30px 20px;
+    box-shadow: 0 0 10px gray;
+}
+
+    .elaqe1txt h1 {
+        font-size: 30px;
+        border-bottom: 2px solid blueviolet;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .elaqe1txt p {
+        margin-bottom: 10px;
+    }
+
+    .elaqe1txt > div {
+        margin: 0 0 30px 70px;
+    }
+
+
+    .elaqe1txt i {
+        width: 10%;
+        text-align: center;
+        margin-right: 15px;
+        color: blueviolet;
+    }
+
+
+.elaqe h3 {
+    position: sticky;
+    margin-right: 0px;
+    font-size: 28px;
+    bottom: 5%;
+    text-align: right;
+}
+
+    .elaqe h3 i {
+        position: relative;
+        font-size: 40px;
+        left: -.5%;
+        top: 20px;
+        transform: rotateY(-180deg);
+        color: blueviolet;
+    }

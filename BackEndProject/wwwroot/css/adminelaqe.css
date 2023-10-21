@@ -1,0 +1,72 @@
+﻿a:hover{
+    cursor: pointer;
+}
+.elaqe {
+    padding: 50px 0 ;
+    min-height: 100vh;
+}
+
+.elaqe1 {
+    width: 100%;
+    margin: 0 auto 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.elaqe1txt {
+    width: 43%;
+    font-size: 20px;
+    padding: 10px 50px;
+    box-shadow: 0 0 10px gray;
+}
+
+    .elaqe1txt h1 {
+        display: inline-block;
+        font-size: 30px;
+        border-bottom: 2px solid blueviolet;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+    }
+
+.aa h2 {
+    margin: 15px 0 20px 0;
+    text-align: center;
+    box-shadow: 0 0 2px black;
+}
+
+.elaqe1txt p {
+    margin-bottom: 10px;
+}
+
+.elaqe1txt > div {
+    margin-bottom: 30px;
+}
+
+.elaqeler {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .elaqeler a {
+        font-size: 15px;
+        color: black;
+    }
+.elaqeler>div:first-child{
+    width: 100%;
+}
+
+
+
+.elaqe1txt i {
+    width: 10%;
+    text-align: center;
+    margin-right: 15px;
+    color: blueviolet;
+}
+
+.elaqe iframe {
+    width: 50%;
+    box-shadow: 0 0 10px gray;
+}
+

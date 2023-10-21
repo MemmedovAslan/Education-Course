@@ -1,0 +1,29 @@
+﻿@section css{
+    <link rel="stylesheet" href="/css/kurslarimiz.css">
+}
+
+@model List<Kurslar>
+
+<section class="kurslarimiz">
+    <div class="kurslarimiz1">
+        <div class="kateqoriyalar">
+            <ul>
+                <li filt="butun" class="selected">Bütün</li>
+                @foreach (var item in ViewBag.Kateqoriya)
+                {
+                    <li filt="@item.KateqoriyaId">@item.KateqoriyaAd</li>
+                }
+            </ul>
+        </div>
+        <div class="kurslar">
+
+            @foreach (var item in Model)
+            {
+            @await Html.PartialAsync("~/Views/Shared/_kurs.cshtml",item)
+            }
+
+        </div>
+    </div>
+
+</section>
+

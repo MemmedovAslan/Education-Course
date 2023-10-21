@@ -1,0 +1,12 @@
+﻿@model BackEndProject.Models.Kurslar
+
+<div class="kurs">
+    <div>
+        <img src="/img/@Model.KursSekil">
+    </div>
+    <div>
+        <a href="/Admin/AdminKursEtrafli/@Model.KursId">Ətraflı</a>
+        <a href="/Admin/KursSil/@Model.KursId">Sil</a>
+        <a href="/Admin/KursDuzelt/@Model.KursId">Düzəlt</a>
+    </div>
+</div>

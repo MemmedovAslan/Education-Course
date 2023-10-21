@@ -1,0 +1,15 @@
+﻿@section css{
+    <link rel="stylesheet" href="/css/kurselaveet.css">
+}
+
+@model Elaqe
+
+<div class="kursadd">
+    <h3>Əlaqə</h3>
+    <form class="kursadd1" action="/Admin/ElaqeDuzelt/@Model.ElaqeId" method="post">
+        <input class="inpt" type="text" placeholder="Ünvan" name="unvan" value="@Model.Unvan">
+        <input class="inpt" type="text" placeholder="İş saatı" name="saat" value="@Model.Saat">
+        <input class="inpt" type="text" placeholder="Nömrə" name="nomre" value="@Model.Nomre">
+        <button>Daxil et</button>
+    </form>
+</div>

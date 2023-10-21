@@ -1,0 +1,45 @@
+﻿.kursadd {
+    padding: 40px ;
+    text-align: center;
+}
+
+.kursadd1 {
+    width: 40%;
+    margin: 50px auto;
+}
+
+.kursadd h3 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.kursadd input, textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.kursadd select {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.kursadd input {
+    height: 40px !important;
+}
+.kursadd form{
+    text-align: left;
+}
+.kursadd button{
+    padding: 10px 15px;
+    color: white;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 10px;
+}

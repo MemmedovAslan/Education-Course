@@ -1,0 +1,60 @@
+﻿@section css{
+    <link rel="stylesheet" href="/css/elaqe.css">
+}
+
+@model List<Elaqe>
+
+<section class="elaqe">
+    <div class="elaqe1">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1277.8737404170238!2d49.84711394117125!3d40.379753071643286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d0a3ea7028d%3A0xac9d73dbd66392c8!2s28%20May!5e0!3m2!1saz!2s!4v1644754389887!5m2!1saz!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="elaqe1txt">
+            <h1>Əlaqə məlumatlarımız</h1>
+            <span></span>
+            <div class="elaqeler">
+                <p><i class="fas fa-map-marker-alt"></i>28 May (Baş ofis)</p>
+                <p><i class="far fa-clock"></i>08:00 - 22:00</p>
+                <p><i class="fas fa-phone-alt"></i>070-816-36-07</p>
+            </div>
+            @foreach (var item in Model)
+            {
+        <div class="elaqeler">
+            @if (item.Unvan != null && item.Saat == null & item.Nomre == null)
+            {
+
+                <p><i class="fas fa-map-marker-alt"></i>@item.Unvan</p>
+            }
+            else if (item.Unvan == null && item.Saat != null && item.Nomre == null)
+            {
+                <p><i class="far fa-clock"></i>@item.Saat</p>
+            }
+            else if (item.Unvan == null && item.Saat == null && item.Nomre != null)
+            {
+                <p><i class="fas fa-phone-alt"></i>@item.Nomre</p>
+            }
+            else if (item.Unvan != null && item.Saat != null & item.Nomre == null)
+            {
+                <p><i class="fas fa-map-marker-alt"></i>@item.Unvan</p>
+                <p><i class="far fa-clock"></i>@item.Saat</p>
+            }
+            else if (item.Unvan != null && item.Saat == null & item.Nomre != null)
+            {
+                <p><i class="fas fa-map-marker-alt"></i>@item.Unvan</p>
+                <p><i class="fas fa-phone-alt"></i>@item.Nomre</p>
+            }
+            else if (item.Unvan == null && item.Saat != null & item.Nomre != null)
+            {
+                <p><i class="far fa-clock"></i>@item.Saat</p>
+                <p><i class="fas fa-phone-alt"></i>@item.Nomre</p>
+            }
+            else
+            {
+                <p><i class="fas fa-map-marker-alt"></i>@item.Unvan</p>
+                <p><i class="far fa-clock"></i>@item.Saat</p>
+                <p><i class="fas fa-phone-alt"></i>@item.Nomre</p>
+            }
+        </div>
+            }
+        </div>
+    </div>
+    <h3><i class="fa-solid fa-turn-down"></i>Sosial media</h3>
+</section>

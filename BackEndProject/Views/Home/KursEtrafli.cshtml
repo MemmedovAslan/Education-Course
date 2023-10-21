@@ -1,0 +1,15 @@
+﻿@section css{
+    <link rel="stylesheet" href="/css/kurslarimiz.css">
+}
+
+@model Kurslar
+
+<section class="yenisehife">
+    <div class="kurs yeni">
+        <img src="/img/@Model.KursSekil">
+        <div class="kurs1">
+            <h1>@Model.KursAd</h1>
+            <p>@Model.KursHaqqinda</p>
+        </div>
+    </div>
+</section>

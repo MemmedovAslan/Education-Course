@@ -1,0 +1,33 @@
+﻿@section css{
+    <link rel="stylesheet" href="/css/gorus.css">
+}
+
+@model List<Kurslar>
+
+<section class="gorus">
+    <h1>Görüş təyin et!</h1>
+    <hr id="hr"/>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, nihil laboriosam. Optio nisi id eum necessitatibus ducimus beatae! In, impedit.</p>
+    <form class="gorus1">
+        <input type="text" placeholder="Ad">
+        <input type="text" placeholder="Soyad">
+        <select class="select kategory">
+            <option value="">Kateqoriya</option>
+            @foreach (var item in ViewBag.Kateqoriya)
+            {
+                <option value="@item.KateqoriyaId">@item.KateqoriyaAd</option>
+            }
+        </select>
+        <select class="subcat">
+            <option value="">Kurs</option>
+            @foreach (var item in Model)
+            {
+                <option class="butun @(item.KursKateqoriyaId)" value="@item.KursId">@item.KursAd</option>
+            }
+        </select>
+        <input type="text" placeholder="E-mail">
+        <input type="text" placeholder="Əlaqə nömrəsi">
+        <textarea placeholder="Öncədən vermək istədiyiniz suallar"></textarea>
+        <button>Daxil et</button>
+    </form>
+</section>

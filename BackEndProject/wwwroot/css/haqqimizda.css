@@ -1,0 +1,131 @@
+﻿nav {
+    background: linear-gradient(150deg,rgb(138, 43, 240),rgb(0, 21, 139));
+}
+.haqqimizda {
+    padding: 100px 0;
+    min-height: 100vh;
+}
+
+    .haqqimizda h1 {
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+.basliq {
+    text-align: center;
+}
+
+
+.haqqimizda1 {
+    width: 40%;
+    height: 160px;
+    position: relative;
+    display: flex;
+    margin-top: 149px;
+}
+
+    .haqqimizda1 > div {
+        height: 100%;
+    }
+
+    .haqqimizda1:nth-child(odd) {
+        flex-direction: row-reverse;
+        left: 44%;
+    }
+
+    .haqqimizda1:nth-child(even) {
+        left: 16%;
+        text-align: right;
+    }
+
+.haqqimizdayazi {
+    width: 70%;
+    padding: 10px 15px;
+}
+
+    .haqqimizdayazi h1 {
+        font-size: 30px;
+    }
+
+    .haqqimizdayazi p {
+        font-size: 18px;
+    }
+
+.haqqimizdasekil {
+    width: 30%;
+    position: relative;
+}
+
+.haqqimizdasekil1 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid blueviolet;
+}
+
+    .haqqimizdasekil1 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+.haqqimizdasekil::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3px;
+    height: 149px;
+    background-color: blueviolet;
+}
+
+.haqqimizda1:last-child .haqqimizdasekil::after {
+    width: 0;
+    height: 0;
+}
+
+
+
+
+.haqqimizda2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(223, 223, 223);
+}
+
+.haqqimizda21 {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.haqqimizda2img {
+    width: 40%;
+}
+
+    .haqqimizda2img img {
+        width: 100%;
+        vertical-align: middle;
+    }
+
+.haqqimizda2txt {
+    width: 57%;
+    position: relative;
+}
+
+.haqqimizda2 h1 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    border-bottom: 2px solid blueviolet;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.haqqimizda2 p {
+    font-size: 18px;
+}

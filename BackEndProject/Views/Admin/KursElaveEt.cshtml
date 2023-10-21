@@ -1,0 +1,23 @@
+﻿@section css{
+    <link rel="stylesheet" href="/css/kurselaveet.css">
+}
+
+@model List<Kateqoriyalar>
+
+<div class="kursadd">
+    <h3>Yeni Kurs Əlavə Et</h3>
+    <form class="kursadd1" action="/Admin/KursElaveEt" method="post" enctype="multipart/form-data">
+        <input class="inpt" type="text" placeholder="Kursun Adi" name="KursAd">
+        <select class="inpt" name="KursKateqoriyaId">
+            <option value="">Kateqoriya</option>
+            @foreach (var item in Model)
+            {
+                <option value="@item.KateqoriyaId">@item.KateqoriyaAd</option>
+            }
+        </select>
+        <input class="inptfile" type="file" name="KursSekil">
+        <textarea class="inpt" placeholder="Kurs Haqqinda" name="KursHaqqinda"></textarea>
+        <button>Daxil et</button>
+    </form>
+</div>
+

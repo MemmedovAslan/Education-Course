@@ -1,0 +1,135 @@
+﻿nav {
+    background: linear-gradient(150deg,rgb(138, 43, 240),rgb(0, 21, 139));
+}
+.kurslarimiz {
+    width: 100%;
+    padding: 120px 0px;
+    min-height: 100vh;
+}
+
+.kurslarimiz1 {
+    width: 100%;
+    min-height: 74vh;
+    padding: 0 80px;
+    border: 1px solid gray;
+    border-right: none;
+    border-left: none;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.kateqoriyalar {
+    width: 20%;
+    border: 1px solid gray;
+    border-top: none;
+    border-bottom: none;
+}
+
+    .kateqoriyalar ul {
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        position: sticky;
+        top: 26%;
+    }
+
+        .kateqoriyalar ul::before {
+            content: '';
+            position: absolute;
+            left: -1.3px;
+            width: 2px;
+            height: 100%;
+            background-color: blueviolet;
+        }
+
+        .kateqoriyalar ul::after {
+            content: '';
+            position: absolute;
+            right: -1.3px;
+            top: 0;
+            width: 2px;
+            height: 100%;
+            background-color: blueviolet;
+        }
+
+    .kateqoriyalar li {
+        border: 1px solid gray;
+        border-right: none;
+        border-left: none;
+        margin: 10px auto;
+        font-size: 25px;
+        padding: 5px;
+        transition: .1s;
+    }
+    .kateqoriyalar li:hover {
+        cursor: pointer;
+        background-color: blueviolet;
+        color: white;
+    }
+
+.kurslar {
+    width: 75%;
+    padding: 20px 0;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+
+    .kurslar > a {
+        width: 49%;
+        height: 180px;
+        margin: 10px 0 20px 0;
+        box-shadow: 0 0 5px blueviolet;
+        border-radius: 5px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        transition: .4s;
+        position: relative;
+        color: black;
+    }
+
+    .kurs:nth-child(even) {
+        flex-direction: row-reverse;
+        text-align: right;
+    }
+
+    .kurs img {
+        width: 60%;
+        height: 100%;
+        object-position: center;
+        object-fit: cover;
+    }
+
+    .kurs:nth-child(even) a {
+        right: 88.7%;
+    }
+
+.kurs1 {
+    width: 40%;
+    padding: 15px;
+}
+
+    .kurs1 h1 {
+        margin: 10px 0;
+    }
+
+.kurs:hover {
+    transform: rotate(-0.5deg);
+    transform-origin: left bottom;
+    box-shadow: 0px 0px 20px gray;
+}
+
+.kurs.yeni:hover {
+    transform: rotate(0deg);
+    box-shadow: 0px 0px 0px;
+}
+
+.yenisehife {
+    padding: 176px;
+}
+
+.kurs.yeni {
+    display: flex;
+}

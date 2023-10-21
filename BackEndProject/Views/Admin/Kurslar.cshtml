@@ -1,0 +1,15 @@
+﻿@model List<BackEndProject.Models.Kurslar>
+
+<div class="kurshisse">
+    <a class="kurs" href="/Admin/KursElaveEt">
+
+        <h2>+</h2>
+
+    </a>
+    @foreach (var item in Model)
+    {
+        @await Html.PartialAsync("_adminkurs", item);
+    }
+
+</div>
+

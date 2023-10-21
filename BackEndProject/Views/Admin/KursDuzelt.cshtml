@@ -1,0 +1,23 @@
+﻿@section css{
+    <link rel="stylesheet" href="/css/kurselaveet.css">
+}
+
+@model Kurslar
+
+<section class="kursadd">
+    <h3>Yeni Kurs Əlavə Et</h3>
+    <form class="kursadd1" action="/Admin/KursDuzelt/@Model.KursId" method="post" enctype="multipart/form-data">
+        <input type="text" placeholder="Kursun Adi" name="KursAd" value="@Model.KursAd">
+        <select name="KursKateqoriyaId">
+            <option value="">Kateqoriya</option>
+            @foreach (var item in ViewBag.Kateqoriya)
+            {
+                <option value="@item.KateqoriyaId" @(Model.KursKateqoriyaId==item.KateqoriyaId ? "selected" : "")>@item.KateqoriyaAd</option>
+            }
+        </select>
+        <input type="file" name="KursSekil">
+        <textarea placeholder="Kurs Haqqinda" name="KursHaqqinda">@Model.KursHaqqinda</textarea>
+        <button>Daxil et</button>
+    </form>
+</section>
+
